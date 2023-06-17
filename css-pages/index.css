@@ -1,0 +1,213 @@
+.main-index-container { 
+    margin-top:50px;
+    margin-right:50px;
+    margin-left:50px;
+    z-index:1;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    animation-duration: 3s;
+    animation-name: slidein; 
+    height:1000px;
+}
+.main-index-first-div { 
+    background-color:#f7c8e0;
+    height:700px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    align-items: center;
+    justify-content:center;
+}
+#damani-logo { 
+    height:500px;
+    width:500px;
+}
+.main-index-second-div {
+    font-family:monospace;
+    height:700px;
+    width:800px;
+    display:flex;
+    flex-direction: column;
+}
+.index-h1 {
+    color:black;
+    font-family:monospace;
+    font-size: 3.75em;
+    text-align:center;
+}
+span {
+    color:#f7c8e0; 
+}
+@keyframes slidein { 
+    from { 
+        transform:translateX(100%);
+        flex: 0 0 0;
+    }
+    to { 
+        transform:translateX(0);
+        flex:1 1 auto;
+    }
+}
+.svg { 
+    left: 60px;
+    position: relative;
+}
+.svg-file { 
+    height:150px;
+}
+#signature-1 { 
+    stroke-dasharray:1245 ;
+    stroke-dashoffset :1245;
+    animation: sign 1s linear;
+    animation-fill-mode:forwards;
+    animation-delay:3s
+}
+#signature-2 { 
+    stroke-dasharray:1798;
+    stroke-dashoffset:1798;
+    animation: sign 2s linear;
+    animation-fill-mode:forwards;
+    animation-delay: 4s;
+}
+#signature-3 { 
+    stroke-dasharray:62;
+    stroke-dashoffset: 62;
+    animation: sign 2s linear;
+    animation-fill-mode:forwards;
+    animation-delay: 6s;
+}
+@keyframes sign { 
+    to { 
+        stroke-dashoffset: 0;
+    }
+}
+#index-p { 
+    color:black;
+    font-size: 1.75em;
+    text-align: center;
+}
+footer {
+    height:80px;
+    font-size: 15px;
+}
+#jackie-link {
+    text-decoration:none;
+    color:black;
+}
+@media only screen and (max-width:600px) {
+.main-index-container {
+    flex-direction:column;
+    align-items: center;
+    height:1000px;
+    margin-top:0;
+    justify-content: flex-start;
+}
+.main-index-first-div {
+    align-items: center;
+    margin-top:0px;
+    height:300px;
+    width: 300px;
+}
+.main-index-second-div {
+    width:300px;
+    height:500px;
+}
+#damani-logo {
+    height:250px;
+    width:250px;
+}
+.index-h1 {
+    font-size: 2em;
+}
+#index-p { 
+    font-size: 1.50em;
+}
+.svg { 
+    right:100px;
+    left:0;
+    margin-top:0;
+}
+#signature-1, #signature-2, #signature-3 { 
+    animation:none;
+    stroke-dashoffset:0;
+}
+footer {
+    height:70px;
+    font-size:12px;
+}
+
+#jackie-link {
+    text-decoration:none;
+    color:black;
+}
+}
+
+@media only screen and (min-width:600px) and (max-width:1040px){
+    .main-index-container {
+        flex-direction:column;
+        align-items: center;
+        justify-content:flex-start;
+        height:1100px;
+        margin-top:0;
+    }
+    .main-index-first-div {
+        align-items: center;
+        margin-top:100px;
+        height:300px;
+        width: 600px;
+        order:2;
+
+    }
+    .main-index-second-div {
+        width:600px;
+        height:500px;
+        margin-top:100px;
+        order:1;
+    }  
+    #damani-logo {
+        height:300px;
+        width:300px;
+
+    }
+    .index-h1 {
+        font-size: 3em;
+    }
+    #index-p { 
+        font-size: 1.50em;
+    } 
+    .svg { 
+    
+        left:40px;
+
+    }
+    .svg-file {
+        height:200px;
+    }
+}
+
+@media only screen and (min-width:1040px) and (max-width:1500px) {
+.main-index-container{
+    height:800px;
+}
+.main-index-first-div {
+    height:500px;
+    width:400px;
+}
+#damani-logo {
+    height:300px;
+    width:300px;
+}
+.main-index-second-div{
+    height: 500px;
+    width: 600px;
+    margin-left:30px;
+}
+#index-p {
+    font-size:1.5em;
+}
+.svg {
+    left:20px;
+}
+}
