@@ -1,0 +1,255 @@
+body{ 
+    margin:0 ; /*removing the space between the body and nav bar on all pages*/
+    background:white; /*Setting all pages background color to pink*/
+    min-height:100vh;  /*Helps sticky footer stick to bottom*/ 
+    display:flex;
+    flex-direction: column;
+}
+.navigation {
+    display:flex; /* defining a flex container (row is the default(no need to specify direction)*/
+    z-index:2;
+    height:40px;
+    justify-content:flex-start;
+    align-items:center;
+    
+} 
+.icon-image { 
+    height: 30px;
+    cursor:pointer;
+    cursor: pointer;
+    align-self: flex-start;
+    margin-right:200px;
+    margin-left:20px;
+    margin-top:5px;
+}
+.links {
+    color: black; /*setting the text within the parent element (.Navigation) to blue */
+    font-family:monospace;
+    text-decoration: none;
+    font-size: 18px;
+    height:inherit;
+    margin-right:180px;
+    align-items:center;
+
+}
+.links { 
+     display:none; 
+}
+nav:hover .links { 
+    display:flex;
+}   
+footer {
+    color:black;
+    background:#f7c8e0;
+    bottom:0;
+    height:40px;
+    text-align:center;
+    font-family:monospace;
+    font-size: 20px;
+    top:100%;
+}
+/*Small devices (phones) */
+@media only screen and (max-width:600px) {
+.links {
+    font-size:11px;
+    margin-right:10px;
+}
+nav .links a:active {
+    display:flex;
+    flex-direction:row;
+}
+footer{
+    font-size:10px;
+    height:20px;
+}
+.icon-image {
+    padding:0;
+    margin-left:5px;
+    margin-top:10px;
+    height:20px;
+}
+.icon-image {
+    margin-right:20px;
+}
+}
+@media only screen and (min-width:601px) and (max-width:700px){
+.navigation {
+    height:40px;
+}
+.links{
+    margin-right: 20px;
+    font-size:15px;
+}
+.icon-image{
+    margin-right:20px;
+}
+footer {
+    font-size:20px;
+}
+}
+@media only screen and (min-width:701px) and (max-width:750px){
+.links { 
+    margin-right:25px;
+    font-size:18px;
+}
+.icon-image{
+    margin-right:25px;
+}
+}
+@media only screen and (min-width:751px) and (max-width:800px){
+.links { 
+    margin-right:30px;
+}
+.icon-image{
+    margin-right:30px;
+
+}
+}
+@media only screen and (min-width:801px) and (max-width:850px){
+.links { 
+    margin-right:35px;
+}
+.icon-image{
+    margin-right:35px;
+}
+
+}
+@media only screen and (min-width:851px) and (max-width:900px){
+.links { 
+    margin-right:40px;
+}
+.icon-image{ 
+    margin-right:40px;
+}
+}
+@media only screen and (min-width:901px) and (max-width:950px){
+.links { 
+    margin-right:45px;
+}
+.icon-image{ 
+    margin-right:45px;
+}
+}
+@media only screen and (min-width:951px) and (max-width:1000px){
+.links { 
+    margin-right:50px;
+}
+.icon-image{ 
+    margin-right:50px;
+}
+}
+@media only screen and (min-width:1001px) and (max-width:1050px){
+.links { 
+    margin-right:55px;
+}
+.icon-image{ 
+    margin-right:55px;
+}
+}
+@media only screen and (min-width:1051px) and (max-width:1100px){
+.links { 
+    margin-right:60px;
+}
+.icon-image{ 
+    margin-right:60px;
+}
+}
+@media only screen and (min-width:1101px) and (max-width:1150px){
+.links { 
+    margin-right:70px;
+}
+.icon-image{ 
+    margin-right:70px;
+}
+}
+@media only screen and (min-width:1151px) and (max-width:1200px){
+.links { 
+    margin-right:80px;
+}
+.icon-image{ 
+    margin-right:80px;
+}
+}
+@media only screen and (min-width:1201px) and (max-width:1250px){
+.links { 
+    margin-right:90px;
+}
+.icon-image{ 
+    margin-right:90px;
+}
+}
+@media only screen and (min-width:1251px) and (max-width:1300px){
+.links { 
+    margin-right:100px;
+}
+.icon-image{ 
+    margin-right:100px;
+}
+
+}
+@media only screen and (min-width:1301px) and (max-width:1350px){
+.links { 
+    margin-right:100px;
+}
+.icon-image{ 
+    margin-right:110px;
+}
+}
+@media only screen and (min-width:1351px) and (max-width:1400px){
+.links { 
+    margin-right:115px;
+}
+.icon-image{ 
+    margin-right:100px;
+}
+}
+@media only screen and (min-width:1401px) and (max-width:1450px){
+.links { 
+    margin-right:120px;
+    font-size:18px;
+}
+.icon-image{ 
+    margin-right:100px;
+}
+}
+@media only screen and (min-width:1451px) and (max-width:1500px){
+.links { 
+    margin-right:130px;
+}
+.icon-image{ 
+    margin-right:100px;
+}
+}
+@media only screen and (min-width:1501px) and (max-width:1550px){
+.links { 
+    margin-right:140px;
+}
+.icon-image{ 
+    margin-right:100px;
+}
+}
+@media only screen and (min-width:1551px) and (max-width:1600px){
+.links { 
+    margin-right:145px;
+}
+.icon-image{ 
+    margin-right:100px;
+}
+}
+@media only screen and (min-width:1601px) and (max-width:1750px){
+.links { 
+    margin-right:160px;
+}
+.icon-image{ 
+    margin-right:130px;
+}
+}
+@media only screen and (min-width:1751px) and (max-width:1850px){
+.links { 
+    margin-right:160px;
+
+}
+.icon-image{ 
+    margin-right:130px;
+}
+}
