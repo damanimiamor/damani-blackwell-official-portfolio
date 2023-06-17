@@ -1,21 +1,20 @@
 body{ 
-    margin:0 ; /*removing the space between the body and nav bar on all pages*/
+    margin:0; /*removing the space between the body and nav bar on all pages*/
     background:white; /*Setting all pages background color to pink*/
     min-height:100vh;  /*Helps sticky footer stick to bottom*/ 
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 .navigation {
     display: flex; /* defining a flex container (row is the default(no need to specify direction)*/
-
-    z-index:2;
-    height:40px;
+    z-index: 2;
+    height: 40px;
 } 
 .icon-image { 
     height: 20px;
-    cursor:pointer;
-    margin-left:20px;
-    margin-top:10px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 .links {
     color: black; /*setting the text within the parent element (.Navigation) to blue */
@@ -24,21 +23,21 @@ body{
     font-size: 20px;
 }
 ul.links-ul { 
-   display:none; 
+   display: none; 
 }
 nav:hover ul.links-ul { 
-    display:flex;
-    flex-direction:row;
+    display: flex;
+    flex-direction: row;
     flex-grow:1; 
     justify-content: space-evenly;
 }   
 footer {
-    color:black;
-    background:#f7c8e0;
-    position:sticky;
-    bottom:0;
-    height:40px;
-    text-align:center;
+    color: black;
+    background: #f7c8e0;
+    position: sticky;
+    bottom: 0;
+    height: 40px;
+    text-align: center;
     font-family:monospace;
     font-size: 20px;
     top:100%;
@@ -50,9 +49,8 @@ footer {
         font-size:11px;
     }
     nav ul.links-ul li a:active {
-        display:flex;
-        flex-direction:row;
-
+        display: flex;
+        flex-direction: row;
     }
 
     footer{
