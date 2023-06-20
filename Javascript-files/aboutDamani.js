@@ -25,6 +25,7 @@ formIcon.addEventListener('click',() => {
         '<textarea rows="5" cols="29" name="message" placeholder="Ex: Hi, I wanted to contact you about your car\'s extended warranty" id="text-area" pattern="[A-Za-z.]"></textarea>' +
         '</div>' +
         '<div class="submit-button-container">' +
+        '<input type="hidden" name="form-name" value="contact-form"></input>'+
         '<input type="submit" name="submitButton" value="Submit" id="submitButton">' +
         '</div>' +
         '</div>' +
@@ -38,7 +39,6 @@ formIcon.addEventListener('click',() => {
 });
 
 function handleFormSubmit(event) {
-    event.preventDefault();
     const form = event.target;
     const formData = new FormData(form);
     fetch(form.action, {
