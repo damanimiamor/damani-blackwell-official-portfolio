@@ -5,7 +5,7 @@ let contactForm = document.getElementById('contact-form');
 
 formIcon.addEventListener('click',() => {
     
-    if(!contactForm){
+    if(document.querySelectorAll('.contact-form').length <2) {
         
         contactForm = document.createElement('div');
         contactForm.classList.add('contact-form');
