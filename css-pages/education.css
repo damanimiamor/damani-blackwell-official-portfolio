@@ -1,0 +1,42 @@
+#degree-box { 
+    display:flex;
+    flex-direction:column;
+    height:900px;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#bachelors-div { 
+    background-color: #f7c8e0;
+    height:300px;
+    font-family:monospace;
+    width:800px;
+    border-radius: 25px;
+    text-align:center;
+}
+
+#masters-div { 
+    background-color:#f7c8e0;
+    height:300px;
+    width:800px;
+    font-family: monospace;
+    border-radius:25px;
+    text-align:center;
+}
+
+.degree { 
+    font-size: 25px;
+}
+.header {
+    font-size:40px;
+}
+
+@media screen and (max-width:600px) {
+    #bachelors-div {
+        width:300px;
+    }
+    #masters-div {
+        width:300px;
+    }
+}
