@@ -135,17 +135,17 @@ main {
 }
 }
 @media only screen and (min-width:1500px) and (max-width:1800px) {
-    #hobbies-list, #skills-list, #goals-list, #contact-lists, #image-box, #text-container { 
-        width: 220px;
-    }
-    #image-box {
-        display:flex;
-        justify-content: center;
-    }
-    #main-div-photo {
-        height:200px;
-    }
-    #contact-lists-header, #goals-header, #skills-header, #hobbies-header {
-        font-size: 20px;
-    }
+#hobbies-list, #skills-list, #goals-list, #contact-lists, #image-box, #text-container { 
+    width: 220px;
+}
+#image-box {
+    display:flex;
+    justify-content: center;
+}
+#main-div-photo {
+    height:200px;
+}
+#contact-lists-header, #goals-header, #skills-header, #hobbies-header {
+    font-size: 20px;
+}
 }
