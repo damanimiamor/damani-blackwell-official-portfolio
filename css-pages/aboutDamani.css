@@ -138,6 +138,8 @@ main {
     }
     #main-div-photo {
         height:200px;
-  
+    }
+    #contact-lists-header, #goals-header, #skills-header, #hobbies-header {
+        font-size: 20px;
     }
 }
