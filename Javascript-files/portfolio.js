@@ -1,11 +1,9 @@
-if (window.location.pathname === '/index.html') {
-    //addressing footer issue rendering in view during transition on index page//
-    let footer = document.getElementById('index-footer');
-    
-    setTimeout(() => {
-        footer.classList.remove('hidden');
-    }, 3000);
-}
+//addressing footer issue rendering in view during transition on index page//
+let footer = document.getElementById('index-footer');
+setTimeout(() => {
+    footer.classList.remove('hidden');
+}, 3000);
+
 
 
     
