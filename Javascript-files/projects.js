@@ -4,7 +4,7 @@ const app = Vue.createApp ({
             title: 'Completed Projects',
             source: [
                 {
-                    image: "/Images/projects/Images/CatPhotoApp.png",
+                    image: "/Images/projects/CatPhotoApp.png",
                     description:"A small project from freeCodeCamp focusing on HTML tags. <a class='link' href='https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-html-by-building-a-cat-photo-app/step-1'> Try it out! </a>"
                 },
                 { 
