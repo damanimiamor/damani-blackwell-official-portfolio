@@ -10,7 +10,7 @@ formIcon.addEventListener('click',() => {
         contactForm = document.createElement('div');
         contactForm.classList.add('contact-form');
 
-        contactForm.innerHTML = '<form id="contact-form" name="contact-form" data-netlify="true" method="post">' +
+        contactForm.innerHTML = '<form id="contact-form" name="contact-form" netlify method="post">' +
         '<div id="text-container">' +
         '<div id="name-container">' +
         '<label for="name" class="form-label"> Please enter your name:</label>' +
@@ -32,26 +32,8 @@ formIcon.addEventListener('click',() => {
         '</form>';
 
         listsBoxes.appendChild(contactForm);
-    }
-    const form = contactForm.querySelector('#contact-form');
-    form.addEventListener('submit', handleFormSubmit);
-      
+    }     
 });
 
-function handleFormSubmit(event) {
-    const form = event.target;
-    const formData = new FormData(form);
-    fetch(form.action, {
-        method: form.method,
-        body: formData,
-    })
-        .then(response => {
-          console.log('Form submitted successfully');
-          form.reset();
-    })
-        .catch(error => {
-          console.error('Form submission error:', error);
-        });
-}
 
 
