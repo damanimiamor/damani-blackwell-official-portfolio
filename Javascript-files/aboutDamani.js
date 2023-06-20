@@ -10,7 +10,7 @@ formIcon.addEventListener('click',() => {
         contactForm = document.createElement('div');
         contactForm.classList.add('contact-form');
 
-        contactForm.innerHTML = '<form id="contact-form" name="contact-form" netlify method="post">' +
+        contactForm.innerHTML = '<form id="contact-form" name="contact-form" data-netlify="true" method="post">' +
         '<div id="text-container">' +
         '<div id="name-container">' +
         '<label for="name" class="form-label"> Please enter your name:</label>' +
