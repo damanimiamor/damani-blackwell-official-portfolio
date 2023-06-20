@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+    <head>
+        <title>Damani Blackwell Projects</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"  content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../Assets/CSSPageForPortfolio/nav-footer.css" type="text/css" rel="stylesheet"> 
+        <link href="../Assets/CSSPageForPortfolio/projects.css" type="text/css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.3.4/vue.global.min.js" integrity="sha512-Wbf9QOX8TxnLykSrNGmAc5mDntbpyXjOw9zgnKql3DgQ7Iyr5TCSPWpvpwDuo+jikYoSNMD9tRRH854VfPpL9A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+
+    <body class="projects" id="projects">
+        <header class="projects-header-element" id="projects-header-element">
+            <nav class="navigation">
+                <i class="icon"><img src="../Assets/Images/three-horizontal-lines-icon.png" class="icon-image"></i>
+                <a class="links" id="links-1" href="index.html">Welcome</a>
+                <a class="links" id="links-2" href="aboutDamani.html">About </a>
+                <a class="links" id="links-3" href="missionStatement.html">Mission</a>
+                <a class="links" id="links-4" href="projects.html">Projects</a>
+                <a class="links" id="links-5" href="Education.html">Education</a>
+                <a class="links" id="links-6" href="../Assets/Textfiles/DamaniBlackwellRésumé.docx" download>R&eacute;sum&eacute;</a>  
+            </nav> 
+            <div id = "flex">
+                <div id="app">
+                    <h1 id="title">{{title}}</h1>
+                    <img :src="source[index].image" alt="Image" class="image-display"/>
+                    <p v-html="source[index].description" id="description"></p>
+                    <div id="button-flex-container">
+                        <button @click="goBack" id="button">Back</button>
+                        <button @click="next" id="button">Next</button>
+                    </div>
+                </div>
+            </div> 
+        </header>
+            
+        <footer class="Footer">&copy;2023 Damani Blackwell</footer>
+    </body>
+    <script src="../Assets/Javascript/projects.js" defer ></script>
+</html>
