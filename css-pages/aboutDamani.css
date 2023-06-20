@@ -79,6 +79,12 @@ main {
 #name, #email, #text-area{ 
     font-family:monospace;
 }
+#submitButton {
+    color:black;
+    background-color:white;
+    height:50px;
+    width:100px;
+}
 @media only screen and (max-width:600px) {
 main {
     height:3000px;
