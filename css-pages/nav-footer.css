@@ -7,14 +7,14 @@
     height:30px;
 }
 .links {
-    color: black;
+    color: white;
     margin-top:10px;
     text-decoration:none;
     font-family:monospace;
     font-size: 30px;
 }
 nav:hover .links {
-    color: white;
+    color: black;
 }
 footer {
     color:black;
